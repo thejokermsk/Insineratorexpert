@@ -4,8 +4,10 @@
 @import "utils/fonts";
 
 html {
+  font-family: 'Roboto', sans-serif;
   font-size: $base-font-size;
   height: 100%;
+  font-weight: 300;
 }
 
 body {
@@ -90,6 +92,78 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content-size;
   width: 100%;
+  position: relative;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.phone {
+  &s {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  text-align: justify;
+  text-align-last: justify;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logotype {
+  display: flex;
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+
+    margin-right: 15px;
+  }
+
+  &__descr {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 320px;
+    line-height: 19px;
+
+    border-left: 2px solid #ffffff;
+    padding-left: 15px;
+  }
+}
+
+.orange {
+  color: #FFDF3C;
+}
+
+.title {
+  color: #233140;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43px;
+}
+
+.descr {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  &--border {
+    border-left: 3px solid #FFDF3C;
+    padding-left: 12px;
+  }
 }
 
 //Модули

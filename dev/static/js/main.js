@@ -1,5 +1,10 @@
 $(document).ready(function () {
     svg4everybody({});
+
+
+    $('.phone').each(function() {
+        $(this).attr('href', 'tel:' + $(this).html().replace(/[^+\d]/g, ''))
+    })
 });
 
 

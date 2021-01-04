@@ -1,0 +1,27 @@
+.button {
+  max-width: 320px;
+  border-radius: 4px;
+  text-align: center;
+  background: linear-gradient(rgb(255, 223, 60), rgb(255, 195, 0) 58px);
+  height: 60px;
+  color: #000;
+  cursor: pointer;
+  transition: all .3s linear;
+  &--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    background: linear-gradient(rgba(255, 223, 60, 0.9), rgb(255, 195, 0) 58px);
+  }
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 22px;
+}

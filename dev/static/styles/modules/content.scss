@@ -1,0 +1,24 @@
+.s_description {
+  position: relative;
+  padding-bottom: 40px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f3f4f8;
+    z-index: -2;
+  }
+  .title {
+    margin-top: 40px;
+  }
+  .descr {
+    margin-top: 10px;
+    color: #233140;
+  }
+  .column {
+    max-width: 528px;
+  }
+}
